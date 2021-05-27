@@ -1,0 +1,415 @@
+<html>
+<head>
+<title>TestNG:  FunctionalTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FunctionalTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun May 16 14:08:10 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>481 seconds (481368 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyNewsLetter()'><b>verifyNewsLetter</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-5273152" onClick='toggleBox("Output-5273152", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5273152" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5273152">
+Vallidate News Letter Subscription<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class= &apos;alert alert-success&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;RITESH-PC&apos;, ip: &apos;192.168.43.86&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\RITESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1e6f115e8992df7d4a8e7d35a86bb29
+*** Element info: {Using=xpath, value=//p[@class= &apos;alert alert-success&apos;]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyNewsLetter(TC_001_BasicFeatures.java:509)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5273152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5273152'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class= &apos;alert alert-success&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;RITESH-PC&apos;, ip: &apos;192.168.43.86&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\RITESH\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a1e6f115e8992df7d4a8e7d35a86bb29
+*** Element info: {Using=xpath, value=//p[@class= &apos;alert alert-success&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+	at com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyNewsLetter(TC_001_BasicFeatures.java:509)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>21</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyAppLogoHeight_TC_005()'><b>verifyAppLogoHeight_TC_005</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-8986568" onClick='toggleBox("Output-8986568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8986568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8986568">
+Vallidate Application Logo Height On Landing Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyAppLogoWidth_TC_006()'><b>verifyAppLogoWidth_TC_006</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-11851076" onClick='toggleBox("Output-11851076", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11851076" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11851076">
+Vallidate Application Logo Height On Landing Page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyAppLogo_TC_004()'><b>verifyAppLogo_TC_004</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-13576524" onClick='toggleBox("Output-13576524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13576524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13576524">
+Landing Page Application Logo Display Test<br/>
+Expected Logo Is Present in Application<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyCartValueUpdate()'><b>verifyCartValueUpdate</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-5775782" onClick='toggleBox("Output-5775782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5775782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5775782">
+Vallidate Cart Value Is Updating<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyCategory_TC_003()'><b>verifyCategory_TC_003</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-19518763" onClick='toggleBox("Output-19518763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19518763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19518763">
+Product Category Validation Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyColorFeature()'><b>verifyColorFeature</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-18540708" onClick='toggleBox("Output-18540708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18540708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18540708">
+Change in the image using Color Feature<br/>
+Change color of the product<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyFacebookSocialMedia()'><b>verifyFacebookSocialMedia</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-28030666" onClick='toggleBox("Output-28030666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28030666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28030666">
+Vallidate Facebook Socal Media Handle<br/>
+Expected Facebook Title Has Shown My Store<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyFriendFeature_TC_011()'><b>verifyFriendFeature_TC_011</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-28545732" onClick='toggleBox("Output-28545732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-28545732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28545732">
+send a Friend Feature<br/>
+Login Successful with User - ABcd@1212<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyLoginPage_TC_008()'><b>verifyLoginPage_TC_008</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-1660588" onClick='toggleBox("Output-1660588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1660588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1660588">
+Register User With New Email ID on SignIn Page<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyProductPrice_TC_010()'><b>verifyProductPrice_TC_010</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-26360515" onClick='toggleBox("Output-26360515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26360515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26360515">
+Dress Menu Is In Uppercase<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyProductRemoveFromCart()'><b>verifyProductRemoveFromCart</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-10707620" onClick='toggleBox("Output-10707620", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10707620" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10707620">
+Vallidate a product can be removed from cart feature<br/>
+Vallidate Cart Value Is Updating<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifySameProductsAddedInCart()'><b>verifySameProductsAddedInCart</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-1479104" onClick='toggleBox("Output-1479104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1479104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1479104">
+Vallidate Total Price Is Corrent In Cart<br/>
+Vallidate Cart Value Is Updating<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifySearchBox_TC_009()'><b>verifySearchBox_TC_009</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-3877730" onClick='toggleBox("Output-3877730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3877730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3877730">
+Search by a keyword in the product search box and vallidate how many products are matching with the name.<br/>
+Total Products Are - 7<br/>
+Summer Dresses > Printed Summer Dress<br/>
+Evening Dresses > Printed Dress<br/>
+Summer Dresses > Printed Summer Dress<br/>
+Summer Dresses > Printed Chiffon Dress<br/>
+Casual Dresses > Printed Dress<br/>
+T-shirts > Faded Short Sleeve T-shirts<br/>
+Blouses > Blouse<br/>
+Dress Size Is Matched<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifySignInPage_TC_007()'><b>verifySignInPage_TC_007</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-1435847" onClick='toggleBox("Output-1435847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1435847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1435847">
+SignIn Page Title Validation Test<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyTitle_TC_002()'><b>verifyTitle_TC_002</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-29316660" onClick='toggleBox("Output-29316660", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29316660" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29316660">
+Landing Page Title Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyTotalIsCorrentInCart()'><b>verifyTotalIsCorrentInCart</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-26183951" onClick='toggleBox("Output-26183951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26183951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26183951">
+Vallidate Total Price Is Corrent In Cart<br/>
+Vallidate Cart Value Is Updating<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyTwitterSocialMedia()'><b>verifyTwitterSocialMedia</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-6855027" onClick='toggleBox("Output-6855027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6855027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6855027">
+Vallidate Twiter Social Media Handle<br/>
+Selenium Framework Is -- Not Present In Twitter Account<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyURL_TC_001()'><b>verifyURL_TC_001</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-21652934" onClick='toggleBox("Output-21652934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21652934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21652934">
+URL Redirection Test<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+<tr>
+<td title='com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures.verifyYoutubeSocialMedia()'><b>verifyYoutubeSocialMedia</b><br>Test class: com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures<br/>
+<a href="#Output-1355407" onClick='toggleBox("Output-1355407", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1355407" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1355407">
+Vallidate Youtube Social Media Handle<br/>
+Selenium Framework Is Present In YouTube Account<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.VisionIT_OrangeHRM_TestCases.TC_001_BasicFeatures@1970963</td></tr>
+</table><p>
+</body>
+</html>

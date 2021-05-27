@@ -1,0 +1,2 @@
+cd F:\Selenium Project 2021\Project010521\Selenium_HybridFramework_Assignment
+mvn clean install

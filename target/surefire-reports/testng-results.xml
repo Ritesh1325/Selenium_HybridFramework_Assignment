@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[setUpDriver]]>
+    </line>
+    <line>
+      <![CDATA[Launch App]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[tearDownDriver]]>
+    </line>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="15026" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:38 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="15026" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:38 IST">
+      <class name="com.VisionIT_OrangeHRM_TestCases.TestCheck">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.VisionIT_OrangeHRM_TestCases.TestCheck@1553d26]" name="setUpDriver" is-config="true" duration-ms="2" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[setUpDriver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:com.VisionIT_OrangeHRM_TestCases.TestCheck@1553d26]" name="launchApp" is-config="true" duration-ms="1" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Launch App]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.VisionIT_OrangeHRM_TestCases.TestCheck@1553d26]" name="login" duration-ms="4" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.VisionIT_OrangeHRM_TestCases.TestCheck@1553d26]" name="logout" is-config="true" duration-ms="2" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:com.VisionIT_OrangeHRM_TestCases.TestCheck@1553d26]" name="tearDownDriver" is-config="true" duration-ms="1" started-at="2021-05-18T13:04:38 IST" finished-at="2021-05-18T13:04:38 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[tearDownDriver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- com.VisionIT_OrangeHRM_TestCases.TestCheck -->
+      <class name="com.VisionIT_OrangeHRM_TestBase.TestBase">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.VisionIT_OrangeHRM_TestBase.TestBase@80503]" name="setUpSuite" is-config="true" duration-ms="1665" started-at="2021-05-18T13:04:21 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUpExtent()[pri:0, instance:com.VisionIT_OrangeHRM_TestBase.TestBase@80503]" name="setUpExtent" is-config="true" duration-ms="344" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpExtent -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.VisionIT_OrangeHRM_TestBase.TestBase@80503]" name="endReport" is-config="true" duration-ms="5" started-at="2021-05-18T13:04:38 IST" finished-at="2021-05-18T13:04:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.VisionIT_OrangeHRM_TestBase.TestBase -->
+      <class name="Selenium_Practice.DataDrivenTest">
+        <test-method status="PASS" signature="launchApp()[pri:0, instance:Selenium_Practice.DataDrivenTest@9a3d1d]" name="launchApp" is-config="true" duration-ms="13829" started-at="2021-05-18T13:04:23 IST" finished-at="2021-05-18T13:04:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:Selenium_Practice.DataDrivenTest@9a3d1d]" name="loginTest" duration-ms="1" started-at="2021-05-18T13:04:37 IST" finished-at="2021-05-18T13:04:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:Selenium_Practice.DataDrivenTest@9a3d1d]" name="closeApp" is-config="true" duration-ms="710" started-at="2021-05-18T13:04:37 IST" finished-at="2021-05-18T13:04:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Selenium_Practice.DataDrivenTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
